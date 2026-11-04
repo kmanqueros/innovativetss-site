@@ -225,3 +225,12 @@ section[id]{scroll-margin-top:110px}
 
 .h1-beat{display:block;margin-top:.35em;color:var(--steel);font-style:italic}
 .nw{white-space:nowrap}
+
+/* ---------- bios ---------- */
+.person h3 a{color:inherit;text-decoration:none}
+.person h3 a:hover{color:var(--steel)}
+.bio-link{font-weight:600;font-size:var(--s-sm);color:var(--steel);text-decoration:none}
+.bio-link:hover{text-decoration:underline}
+.byline a{color:inherit;text-decoration:none}
+.byline a:hover b{color:var(--steel)}
+.article-body .bio-posts{list-style:none;padding:0;margin:0;display:grid;gap:10px}
