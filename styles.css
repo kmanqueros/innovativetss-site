@@ -241,22 +241,35 @@ section[id]{scroll-margin-top:110px}
 /* hero skyline: downtown San Diego behind the headline */
 body{margin:0}
 .hero{position:relative;isolation:isolate;color:#fff;
-  --ink:#FFFFFF;--ink-2:#D9E0EA;--steel:#A9D6DD;--rule:rgba(255,255,255,.28);
+  --ink:#FFFFFF;--ink-2:#E3E8EF;--steel:#BFE3E8;--rule:rgba(255,255,255,.32);
   background:
-    linear-gradient(90deg,rgba(13,22,40,.90) 0%,rgba(13,22,40,.78) 45%,rgba(13,22,40,.55) 100%),
-    url(hero-skyline.jpg) center 40%/cover no-repeat #0D1628}
-.hero .eyebrow{color:#E2C27A}
-.hero .lede{color:#E6EBF2}
+    linear-gradient(90deg,rgba(13,22,40,.80) 0%,rgba(13,22,40,.62) 38%,rgba(13,22,40,.18) 62%,rgba(13,22,40,0) 100%),
+    url(hero-skyline.jpg) center 35%/cover no-repeat #1E4F8A}
+.hero .wrap{grid-template-columns:minmax(0,40rem);gap:44px;padding-block:80px 0}
+.hero h1,.hero .lede{text-shadow:0 1px 18px rgba(13,22,40,.45)}
+.hero .eyebrow{color:#F0D48E}
+.hero .lede{color:#F1F4F8}
+.hero .hero-facts{border-top-color:rgba(255,255,255,.4)}
 .hero .btn-primary{background:#C9A24A;color:#13213A}
 .hero .btn-primary:hover{background:#E2C27A}
-.hero .btn-ghost{border-color:#fff;color:#fff}
-.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
-.hero .schedule{background:rgba(13,22,40,.62);border:1px solid rgba(255,255,255,.18);box-shadow:0 20px 50px -30px rgba(0,0,0,.7);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff}
-.hero .schedule-head{border-bottom-color:#C9A24A}
-.hero .beats .n{color:#E2C27A}
-.hero .beats li{border-bottom-color:rgba(255,255,255,.16)}
-.hero .beats p,.hero .schedule-foot{color:#D3DAE5}
-@media (max-width:900px){.hero{background:
-    linear-gradient(180deg,rgba(13,22,40,.82) 0%,rgba(13,22,40,.74) 100%),
-    url(hero-skyline.jpg) 40% center/cover no-repeat #0D1628}}
+.hero .btn-ghost{border-color:#fff;color:#fff;background:rgba(13,22,40,.25)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.15)}
+/* the three commitments as a band across the bottom of the photo */
+.hero .schedule{grid-column:1/-1;width:min(var(--wrap) - 32px,calc(100vw - 32px));max-width:none;margin-bottom:0;
+  background:rgba(13,22,40,.66);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border:0;border-top:2px solid #C9A24A;border-radius:0;box-shadow:none;padding:22px 28px 22px;color:#fff}
+.hero .schedule-head{border:0;padding:0;margin:0 0 14px}
+.hero .schedule-head b{font-family:var(--mono);font-size:var(--s0);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#F0D48E}
+.hero .beats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.hero .beats li,.hero .beats li:first-child{display:block;padding:0;border:0}
+.hero .beats .n{display:block;font-size:var(--s2);color:#F0D48E;margin-bottom:4px}
+.hero .beats h3{font-size:var(--s3);margin:0 0 6px;color:#fff}
+.hero .beats p{font-size:var(--s-sm);line-height:1.55;color:#DCE3EC}
+.hero .schedule-foot{margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.18);color:#DCE3EC}
+@media (max-width:900px){
+  .hero{background:
+    linear-gradient(180deg,rgba(13,22,40,.70) 0%,rgba(13,22,40,.55) 55%,rgba(13,22,40,.80) 100%),
+    url(hero-skyline.jpg) 35% center/cover no-repeat #1E4F8A}
+  .hero .wrap{padding-block:44px 0}
+  .hero .schedule{width:auto;padding:20px 18px}
+  .hero .beats{grid-template-columns:1fr;gap:20px}}
