@@ -243,6 +243,7 @@ body{margin:0}
 .hero{position:relative;isolation:isolate;color:#13213A;
   --ink:#13213A;--ink-2:#2E3A52;--steel:#1E5F6B;--rule:rgba(19,33,58,.25);
   background:
+    linear-gradient(180deg,rgba(244,246,245,0) 0%,rgba(244,246,245,0) 58%,rgba(244,246,245,.86) 76%,#F4F6F5 92%),
     linear-gradient(90deg,rgba(244,246,245,.92) 0%,rgba(244,246,245,.80) 36%,rgba(244,246,245,.15) 60%,rgba(244,246,245,0) 100%),
     url(hero-new-york.jpg) center 55%/cover no-repeat #6E9CC9}
 .hero .wrap{grid-template-columns:minmax(0,40rem);gap:44px;padding-block:80px 0}
@@ -254,18 +255,18 @@ body{margin:0}
 .hero .btn-ghost{border-color:#13213A;color:#13213A;background:rgba(255,255,255,.5)}
 .hero .btn-ghost:hover{background:#fff}
 .hero .schedule{grid-column:1/-1;width:min(var(--wrap) - 32px,calc(100vw - 32px));max-width:none;margin-bottom:0;
-  background:rgba(255,255,255,.88);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
-  border:0;border-top:3px solid #C9A24A;border-radius:0;box-shadow:none;padding:22px 28px;color:#13213A}
+  background:none;-webkit-backdrop-filter:none;backdrop-filter:none;
+  border:0;border-top:1px solid rgba(19,33,58,.18);border-radius:0;box-shadow:none;padding:26px 0 40px;color:#13213A}
 .hero .schedule-head{border:0;padding:0;margin:0 0 14px}
 .hero .schedule-head b{font-family:var(--mono);font-size:var(--s0);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8A6A22}
 .hero .beats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
 .hero .beats li,.hero .beats li:first-child{display:block;padding:0;border:0}
 .hero .beats .n{display:block;font-size:var(--s2);color:#A88232;margin-bottom:4px}
 .hero .beats h3{font-size:var(--s3);margin:0 0 6px;color:#13213A}
-.hero .beats p{font-size:var(--s-sm);line-height:1.55;color:#44506A}
-.hero .schedule-foot{margin-top:16px;padding-top:12px;border-top:1px solid #D5DBE0;color:#44506A}
+.hero .beats p{font-size:var(--s-sm);line-height:1.6;color:#3A465C}
+.hero .schedule-foot{margin-top:18px;padding-top:0;border-top:0;color:#44506A}
 @media (max-width:900px){
-  .hero{background:linear-gradient(180deg,rgba(244,246,245,.88),rgba(244,246,245,.70)),url(hero-new-york.jpg) 50% center/cover no-repeat #6E9CC9}
+  .hero{background:linear-gradient(180deg,rgba(244,246,245,.88) 0%,rgba(244,246,245,.70) 40%,rgba(244,246,245,.94) 62%,#F4F6F5 80%),url(hero-new-york.jpg) 50% center/cover no-repeat #6E9CC9}
   .hero .wrap{padding-block:44px 0}
-  .hero .schedule{width:auto;padding:20px 18px}
+  .hero .schedule{width:auto;padding:22px 0 32px}
   .hero .beats{grid-template-columns:1fr;gap:20px}}
