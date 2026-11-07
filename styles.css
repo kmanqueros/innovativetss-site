@@ -237,3 +237,24 @@ section[id]{scroll-margin-top:110px}
 
 .bio-photo{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block}
 .avatar{overflow:hidden}
+
+/* hero skyline: San Diego and Denver along the bottom of the hero */
+body{margin:0}
+.hero{position:relative;isolation:isolate;color:#fff;
+  --ink:#FFFFFF;--ink-2:#D9E0EA;--steel:#A9D6DD;--rule:rgba(255,255,255,.28);
+  background:
+    linear-gradient(90deg,rgba(13,22,40,.72) 0%,rgba(13,22,40,.38) 55%,rgba(13,22,40,.10) 100%),
+    linear-gradient(180deg,rgba(13,22,40,.55) 0%,rgba(13,22,40,.25) 70%,rgba(13,22,40,.5) 100%),
+    url(hero-skyline.jpg) center bottom/max(100%,1500px) auto no-repeat #0D1628}
+.hero .eyebrow{color:#E2C27A}
+.hero .lede{color:#E6EBF2}
+.hero .btn-primary{background:#C9A24A;color:#13213A}
+.hero .btn-primary:hover{background:#E2C27A}
+.hero .btn-ghost{border-color:#fff;color:#fff}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero .schedule{--ink:#13213A;--ink-2:#44506A;--rule:#D5DBE0;--sheet:#FFFFFF;color:#13213A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero .schedule{--ink:#E8ECF2;--ink-2:#A7B1C2;--rule:#2A3650;--sheet:#152034;color:#E8ECF2}}
+:root[data-theme="dark"] .hero .schedule{--ink:#E8ECF2;--ink-2:#A7B1C2;--rule:#2A3650;--sheet:#152034;color:#E8ECF2}
+@media (max-width:900px){.hero{background:
+    linear-gradient(180deg,rgba(13,22,40,.66) 0%,rgba(13,22,40,.70) 100%),
+    url(hero-skyline.jpg) 18% 170px/auto 600px no-repeat #0D1628}}
