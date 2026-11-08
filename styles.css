@@ -243,11 +243,11 @@ body{margin:0}
 .hero{position:relative;isolation:isolate;color:#fff;
   --ink:#FFFFFF;--ink-2:#E3E8EF;--steel:#BFE3E8;--rule:rgba(255,255,255,.30);
   background:
-    linear-gradient(180deg,rgba(13,22,40,0) 0%,rgba(13,22,40,0) 52%,rgba(13,22,40,.86) 74%,#0D1628 90%),
-    linear-gradient(90deg,rgba(13,22,40,.82) 0%,rgba(13,22,40,.64) 38%,rgba(13,22,40,.20) 62%,rgba(13,22,40,.08) 100%),
+    linear-gradient(180deg,rgba(13,22,40,0) 0%,rgba(13,22,40,0) 60%,rgba(13,22,40,.50) 76%,rgba(13,22,40,.70) 100%),
+    linear-gradient(90deg,rgba(13,22,40,.60) 0%,rgba(13,22,40,.42) 36%,rgba(13,22,40,.08) 60%,rgba(13,22,40,0) 100%),
     url(hero-new-york.jpg) center 55%/cover no-repeat #0D1628}
 .hero .wrap{grid-template-columns:minmax(0,40rem);gap:44px;padding-block:80px 0}
-.hero h1,.hero .lede{text-shadow:0 1px 18px rgba(13,22,40,.5)}
+.hero h1,.hero .lede,.hero .eyebrow,.hero .hero-facts,.hero .schedule{text-shadow:0 1px 14px rgba(13,22,40,.65),0 0 2px rgba(13,22,40,.4)}
 .hero .eyebrow{color:#F0D48E}
 .hero .lede{color:#F1F4F8}
 .hero .hero-facts{border-top-color:rgba(255,255,255,.35)}
@@ -263,11 +263,11 @@ body{margin:0}
 .hero .beats li,.hero .beats li:first-child{display:block;padding:0;border:0}
 .hero .beats .n{display:block;font-size:var(--s2);color:#F0D48E;margin-bottom:4px}
 .hero .beats h3{font-size:var(--s3);margin:0 0 6px;color:#fff}
-.hero .beats p{font-size:var(--s-sm);line-height:1.6;color:#D6DDE7}
+.hero .beats p{font-size:var(--s-sm);line-height:1.6;color:#EEF2F7}
 .hero .schedule-foot{margin-top:18px;padding-top:0;border-top:0;color:#C9D2DE}
 @media (max-width:900px){
   .hero{background:
-    linear-gradient(180deg,rgba(13,22,40,.74) 0%,rgba(13,22,40,.62) 38%,rgba(13,22,40,.92) 58%,#0D1628 74%),
+    linear-gradient(180deg,rgba(13,22,40,.58) 0%,rgba(13,22,40,.48) 38%,rgba(13,22,40,.82) 58%,#0D1628 76%),
     url(hero-new-york.jpg) 50% top/auto 900px no-repeat #0D1628}
   .hero .wrap{padding-block:44px 0}
   .hero .schedule{width:auto;padding:22px 0 34px}
