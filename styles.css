@@ -238,35 +238,37 @@ section[id]{scroll-margin-top:110px}
 .bio-photo{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block}
 .avatar{overflow:hidden}
 
-/* hero: downtown San Diego, light navy tint */
+/* hero: New York skyline, dark navy treatment, no box behind the commitments */
 body{margin:0}
-.hero{position:relative;isolation:isolate;color:#13213A;
-  --ink:#13213A;--ink-2:#2E3A52;--steel:#1E5F6B;--rule:rgba(19,33,58,.25);
+.hero{position:relative;isolation:isolate;color:#fff;
+  --ink:#FFFFFF;--ink-2:#E3E8EF;--steel:#BFE3E8;--rule:rgba(255,255,255,.30);
   background:
-    linear-gradient(180deg,rgba(244,246,245,0) 0%,rgba(244,246,245,0) 58%,rgba(244,246,245,.86) 76%,#F4F6F5 92%),
-    linear-gradient(90deg,rgba(244,246,245,.92) 0%,rgba(244,246,245,.80) 36%,rgba(244,246,245,.15) 60%,rgba(244,246,245,0) 100%),
-    url(hero-new-york.jpg) center 55%/cover no-repeat #6E9CC9}
+    linear-gradient(180deg,rgba(13,22,40,0) 0%,rgba(13,22,40,0) 52%,rgba(13,22,40,.86) 74%,#0D1628 90%),
+    linear-gradient(90deg,rgba(13,22,40,.82) 0%,rgba(13,22,40,.64) 38%,rgba(13,22,40,.20) 62%,rgba(13,22,40,.08) 100%),
+    url(hero-new-york.jpg) center 55%/cover no-repeat #0D1628}
 .hero .wrap{grid-template-columns:minmax(0,40rem);gap:44px;padding-block:80px 0}
-.hero h1,.hero .lede{text-shadow:0 0 18px rgba(244,246,245,.9)}
-.hero .eyebrow{color:#8A6A22}
-.hero .lede{color:#2E3A52}
-.hero .btn-primary{background:#13213A;color:#fff}
-.hero .btn-primary:hover{background:#1E5F6B}
-.hero .btn-ghost{border-color:#13213A;color:#13213A;background:rgba(255,255,255,.5)}
-.hero .btn-ghost:hover{background:#fff}
+.hero h1,.hero .lede{text-shadow:0 1px 18px rgba(13,22,40,.5)}
+.hero .eyebrow{color:#F0D48E}
+.hero .lede{color:#F1F4F8}
+.hero .hero-facts{border-top-color:rgba(255,255,255,.35)}
+.hero .btn-primary{background:#C9A24A;color:#13213A}
+.hero .btn-primary:hover{background:#E2C27A}
+.hero .btn-ghost{border-color:#fff;color:#fff;background:rgba(13,22,40,.25)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.15)}
 .hero .schedule{grid-column:1/-1;width:min(var(--wrap) - 32px,calc(100vw - 32px));max-width:none;margin-bottom:0;
-  background:none;-webkit-backdrop-filter:none;backdrop-filter:none;
-  border:0;border-top:1px solid rgba(19,33,58,.18);border-radius:0;box-shadow:none;padding:26px 0 40px;color:#13213A}
+  background:none;border:0;border-top:1px solid rgba(255,255,255,.28);border-radius:0;box-shadow:none;padding:26px 0 44px;color:#fff}
 .hero .schedule-head{border:0;padding:0;margin:0 0 14px}
-.hero .schedule-head b{font-family:var(--mono);font-size:var(--s0);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8A6A22}
+.hero .schedule-head b{font-family:var(--mono);font-size:var(--s0);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#F0D48E}
 .hero .beats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
 .hero .beats li,.hero .beats li:first-child{display:block;padding:0;border:0}
-.hero .beats .n{display:block;font-size:var(--s2);color:#A88232;margin-bottom:4px}
-.hero .beats h3{font-size:var(--s3);margin:0 0 6px;color:#13213A}
-.hero .beats p{font-size:var(--s-sm);line-height:1.6;color:#3A465C}
-.hero .schedule-foot{margin-top:18px;padding-top:0;border-top:0;color:#44506A}
+.hero .beats .n{display:block;font-size:var(--s2);color:#F0D48E;margin-bottom:4px}
+.hero .beats h3{font-size:var(--s3);margin:0 0 6px;color:#fff}
+.hero .beats p{font-size:var(--s-sm);line-height:1.6;color:#D6DDE7}
+.hero .schedule-foot{margin-top:18px;padding-top:0;border-top:0;color:#C9D2DE}
 @media (max-width:900px){
-  .hero{background:linear-gradient(180deg,rgba(244,246,245,.88) 0%,rgba(244,246,245,.70) 40%,rgba(244,246,245,.94) 62%,#F4F6F5 80%),url(hero-new-york.jpg) 50% center/cover no-repeat #6E9CC9}
+  .hero{background:
+    linear-gradient(180deg,rgba(13,22,40,.74) 0%,rgba(13,22,40,.62) 38%,rgba(13,22,40,.92) 58%,#0D1628 74%),
+    url(hero-new-york.jpg) 50% top/auto 900px no-repeat #0D1628}
   .hero .wrap{padding-block:44px 0}
-  .hero .schedule{width:auto;padding:22px 0 32px}
+  .hero .schedule{width:auto;padding:22px 0 34px}
   .hero .beats{grid-template-columns:1fr;gap:20px}}
